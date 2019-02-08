@@ -18,11 +18,7 @@ namespace Web.Controllers
 
         public IActionResult JSON()
         {
-            
-              
              return  Json(new {name="Kullu", quote="This is my favorite place."});
-          
-
         }
          
         public IActionResult HTML(){
