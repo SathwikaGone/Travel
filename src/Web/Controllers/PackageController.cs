@@ -22,7 +22,7 @@ namespace Web.Controllers
         }
          
         public IActionResult HTML(){
-            var things= "<!DOCTYPE html><html><body>Things to buy for a tour" + 
+            var things= "<!DOCTYPE html><html><body>This is HTML page.<br>Things to buy for a tour" + 
          "<br> 1) Visas, documents, and travel details. <br> 2) Backpack Internet, laptops, and phones. <br>3) Immunizations, first aid."+
         "<br>4) Shoes.<br> </body></html>";
             return Content(things, "text/html");
@@ -32,10 +32,5 @@ namespace Web.Controllers
             return View();
         }
 
-        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        // public IActionResult Error()
-        // {
-        //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        // }
     }
 }
