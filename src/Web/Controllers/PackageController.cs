@@ -23,8 +23,8 @@ namespace Web.Controllers
          
         public IActionResult HTML(){
             var things= "<!DOCTYPE html><html><body>Things to buy for a tour" + 
-      "<br> 1) Visas, documents, and travel details. <br> 2) Shoes <br>3) Immunizations, first aid. <br>"+
- "<br>4) Backpack Internet, laptops, and phones. <br> </body></html>";
+         "<br> 1) Visas, documents, and travel details. <br> 2) Backpack Internet, laptops, and phones. <br>3) Immunizations, first aid."+
+        "<br>4) Shoes.<br> </body></html>";
             return Content(things, "text/html");
 
         }
